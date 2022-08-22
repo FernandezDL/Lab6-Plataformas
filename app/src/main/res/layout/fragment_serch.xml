@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".serchFragment">
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/search"
+
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintBottom_toTopOf="@id/genres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/genres"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:layout_marginEnd="260dp"
+        android:text="@string/top"
+        android:textColor="@color/white"
+
+        android:textSize="15sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/genres" />
+
+    <ImageButton
+        android:id="@+id/pop"
+        android:layout_width="180dp"
+        android:layout_height="113dp"
+
+        android:layout_marginTop="15dp"
+
+        android:contentDescription="@string/description"
+
+        android:src="@drawable/pop"
+
+        app:layout_constraintBottom_toTopOf="@id/hipHop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/latin"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/latin"
+        android:layout_width="180dp"
+        android:layout_height="111dp"
+
+        android:contentDescription="@string/description"
+
+        android:src="@drawable/latin"
+
+        android:layout_marginTop="15dp"
+
+        app:layout_constraintEnd_toStartOf="@id/pop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintBottom_toTopOf="@id/mex"/>
+
+    <ImageButton
+        android:id="@+id/mex"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+
+        android:contentDescription="@string/description"
+
+        android:src="@drawable/mex"
+
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toStartOf="@id/hipHop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/latin" />
+
+    <ImageButton
+        android:id="@+id/hipHop"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+
+        android:contentDescription="@string/description"
+
+        android:src="@drawable/hiphop"
+
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/mex"
+        app:layout_constraintTop_toBottomOf="@id/pop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="134dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
