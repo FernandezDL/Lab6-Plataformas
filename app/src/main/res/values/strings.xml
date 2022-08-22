@@ -12,6 +12,9 @@
     <string name="search">Search</string>
     <string name="top">Your top genres</string>
 
+    <string name="home">Home</string>
+    <string name="library2">Library</string>
+
     <string name="description">descripcionX</string>
 
 </resources>
