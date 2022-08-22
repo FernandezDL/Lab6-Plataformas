@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab6</string>
+
+    <string name="morning">Good Morning,</string>
+    <string name="name">Diana</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
